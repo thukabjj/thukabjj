@@ -11,8 +11,10 @@
 ![CSS3](https://img.shields.io/badge/-CSS3-black?logo=css3&style=social)&nbsp;&nbsp;
 ![GitHub](https://img.shields.io/badge/-GitHub-black?logo=github&style=social)&nbsp;&nbsp;
 
-
-![Arthur's Github Stats](https://github-readme-stats.vercel.app/api?username=thukabjj&count_private=true&show_icons=true&include_all_commits=true)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=thukabjj&hide=TeX&layout=compact)
+
+![Arthur's GitHub stats](https://github-readme-stats.vercel.app/api/?username=thukabjj&show_icons=true&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515)
+
+
 
 ![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=thukabjj.thukabjj)
