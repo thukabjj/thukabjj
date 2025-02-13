@@ -1,9 +1,3 @@
-Your existing `README.md` is already structured well for GitHub, with great use of badges and a personal touch. I'll enhance it by integrating key details from your LaTeX CV while keeping the engaging tone and formatting.  
-
-Here’s the **updated and enriched** version of your `README.md`:  
-
----
-
 # 👋 Hey there! I'm Arthur Costa 🚀  
 
 ## **Software Engineer | Java | Golang | Cloud | Distributed Systems**  
