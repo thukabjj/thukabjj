@@ -114,7 +114,7 @@ const arthur = {
 <img height="180em" src="https://github-readme-stats.vercel.app/api?username=thukabjj&show_icons=true&theme=buefy&include_all_commits=true&count_private=true&border_radius=10"/>
 <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=thukabjj&layout=compact&langs_count=8&theme=buefy&border_radius=10&hide=html,css"/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=thukabjj&theme=buefy&border_radius=10" alt="GitHub Streak"/>
+<img src="https://streak-stats.demolab.com/?user=thukabjj&theme=buefy&border_radius=10" alt="GitHub Streak"/>
 
 </div>
 
