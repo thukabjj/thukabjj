@@ -160,9 +160,9 @@ const arthur = {
 🔍 **[Implementing Real-time Observability in Distributed Systems](https://tech-ish-thoughts.com/observability-patterns)**
 
 <div align="center">
-<a href="https://tech-ish-thoughts.com">
-<img src="https://substackcdn.com/image/fetch/w_30,h_30,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd9b62b38-c4a1-47dc-8fac-0ec88739efd6_828x828.jpeg" alt="Tech.ish Thoughts" width="20" height="20" style="border-radius: 50%" />
-<strong> Read more on tech.ish thoughts</strong>
+<a href="https://tech-ish-thoughts.com" style="display: inline-flex; align-items: center; text-decoration: none;">
+<img src="https://substackcdn.com/image/fetch/w_30,h_30,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd9b62b38-c4a1-47dc-8fac-0ec88739efd6_828x828.jpeg" alt="Tech.ish Thoughts" width="20" height="20" style="border-radius: 50%; margin-right: 8px;" />
+<strong>Read more on tech.ish thoughts</strong>
 </a>
 </div>
 
