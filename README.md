@@ -1,32 +1,32 @@
-# Hey there! I'm Arthur Costa 👋
-
 <div align="center">
 
-![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=500&lines=Software+Engineer+at+FanDuel;8%2B+years+building+scalable+systems;Backend+%7C+Cloud+%7C+Distributed+Systems)
+# Hi there, I'm Arthur Costa! 👋
 
-<img src="https://komarev.com/ghpvc/?username=thukabjj&color=58A6FF&style=flat-square&label=Profile+Views" alt="Profile Views" />
-<img src="https://img.shields.io/github/followers/thukabjj?style=flat-square&color=58A6FF&labelColor=333" alt="GitHub followers" />
+![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=3078c7&center=true&vCenter=true&width=500&lines=Software+Engineer+at+FanDuel;Backend+%7C+Cloud+%7C+Distributed+Systems;Building+scalable+solutions+for+8%2B+years)
+
+<img src="https://komarev.com/ghpvc/?username=thukabjj&color=blue&style=flat-square&label=Profile+Views" alt="Profile Views" />
+<img src="https://img.shields.io/github/followers/thukabjj?style=flat-square&color=blue&labelColor=333" alt="GitHub followers" />
 
 </div>
 
 ---
 
-## 🧑‍💻 **About Me**
+## 🚀 About Me
 
-```javascript
+```typescript
 const arthur = {
-    location: "Porto, Portugal 🇵🇹",
-    experience: "8+ years",
-    currentRole: "Software Engineer @ FanDuel",
-    architecture: ["Microservices", "Event-Driven", "Serverless", "Cloud-Native"],
-    specialties: ["Backend Systems", "Distributed Computing", "Infrastructure"],
-    currentlyReading: "Designing Data-Intensive Applications",
-    blog: "Tech.ish Thoughts",
-    availability: "Open to interesting opportunities"
+  location: "Porto, Portugal 🇵🇹",
+  role: "Software Engineer @ FanDuel",
+  experience: "8+ years",
+  focus: ["Backend Development", "Cloud Architecture", "Distributed Systems"],
+  currentlyLearning: ["Rust", "AI/LLM Integration", "GraalVM Native"],
+  currentlyReading: "Designing Data-Intensive Applications",
+  blog: "tech.ish thoughts",
+  motto: "Building scalable systems that handle millions of transactions"
 };
 ```
 
-🎯 **Passionate about** building **scalable**, **reliable**, and **high-performance** software solutions that handle millions of daily transactions at **99.99% uptime**.
+🎯 Passionate about creating **robust**, **scalable**, and **high-performance** software solutions. I love solving complex distributed systems challenges and mentoring fellow developers.
 
 ---
 
@@ -78,46 +78,56 @@ const arthur = {
 
 ---
 
-## 🛠️ **Tech Stack**
+## 🛠️ Technologies & Tools
 
 <div align="center">
 
-![Technologies](https://skillicons.dev/icons?i=java,go,python,nodejs,typescript,spring,aws,kubernetes,docker,terraform,postgres,mongodb,redis,kafka,prometheus,grafana&theme=dark)
+![Technologies](https://skillicons.dev/icons?i=java,go,python,nodejs,typescript,spring,aws,kubernetes,docker,terraform,postgres,mongodb,redis,kafka,prometheus,grafana&theme=light)
 
-**Languages:** Java • Golang • Python • Node.js • TypeScript • Scala • Kotlin
-**Cloud:** AWS • Kubernetes • Docker • Terraform • Ansible
-**Data:** PostgreSQL • MongoDB • Redis • Kafka • Elasticsearch
-**DevOps:** GitHub Actions • Jenkins • Prometheus • Grafana
+</div>
+
+### Languages
+![Java](https://img.shields.io/badge/Java-8%2B%20years-orange?style=flat-square&logo=openjdk)
+![Golang](https://img.shields.io/badge/Go-4%2B%20years-00ADD8?style=flat-square&logo=go&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3%2B%20years-3776AB?style=flat-square&logo=python&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-5%2B%20years-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-4%2B%20years-3178C6?style=flat-square&logo=typescript&logoColor=white)
+
+### Cloud & Infrastructure
+![AWS](https://img.shields.io/badge/AWS-Expert-232F3E?style=flat-square&logo=amazonaws&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-Advanced-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-Expert-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-Advanced-7B42BC?style=flat-square&logo=terraform&logoColor=white)
+
+### Databases & Messaging
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Expert-336791?style=flat-square&logo=postgresql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-Advanced-47A248?style=flat-square&logo=mongodb&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-Advanced-DC382D?style=flat-square&logo=redis&logoColor=white)
+![Kafka](https://img.shields.io/badge/Apache_Kafka-Expert-231F20?style=flat-square&logo=apachekafka&logoColor=white)
+
+---
+
+## 📊 GitHub Statistics
+
+<div align="center">
+
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=thukabjj&show_icons=true&theme=buefy&include_all_commits=true&count_private=true&border_radius=10"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=thukabjj&layout=compact&langs_count=8&theme=buefy&border_radius=10&hide=html,css"/>
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=thukabjj&theme=buefy&border_radius=10" alt="GitHub Streak"/>
 
 </div>
 
 ---
 
-## 📊 **GitHub Stats**
+## 🏆 Key Achievements
 
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=thukabjj&show_icons=true&theme=tokyonight&count_private=true&include_all_commits=true&border_radius=10&bg_color=0D1117&title_color=58A6FF&icon_color=1F6FEB&text_color=C9D1D9&border_color=30363D&height=170" alt="GitHub Stats" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=thukabjj&layout=compact&theme=tokyonight&langs_count=8&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9&border_color=30363D&border_radius=10&hide=html,css&height=170" alt="Top Languages" />
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=thukabjj&theme=tokyonight&background=0D1117&border=30363D&stroke=58A6FF&ring=1F6FEB&fire=FF6B6B&currStreakNum=58A6FF&sideNums=58A6FF&currStreakLabel=58A6FF&sideLabels=C9D1D9&dates=C9D1D9" alt="GitHub Streak" />
-
-</div>
-
----
-
-## 🏆 **Key Achievements**
-
-<div align="center">
-
-| 🎯 **Metric** | 📊 **Achievement** | 💡 **Impact** |
-|---------------|-------------------|---------------|
-| 💰 **Cost Optimization** | 70% reduction | $200K+ annual savings |
-| 📈 **System Reliability** | 60% → 90%+ success rate | Enhanced platform stability |
-| ⚡ **Scale & Performance** | 1M+ daily transactions | 99.99% uptime |
-| 🚀 **DevOps Efficiency** | 70% faster deployments | Improved development velocity |
-
-</div>
+| 🎯 Metric | 📊 Achievement | 💡 Impact |
+|-----------|---------------|----------|
+| 💰 Cost Optimization | 70% reduction | $200K+ annual savings |
+| 📈 System Reliability | 60% → 90%+ success rate | Enhanced platform stability |
+| ⚡ Scale & Performance | 1M+ daily transactions | 99.99% uptime |
+| 🚀 DevOps Efficiency | 70% faster deployments | Improved development velocity |
 
 ---
 
@@ -132,13 +142,16 @@ const arthur = {
 
 ---
 
-## 📖 **Currently Learning**
+## 📚 Currently Learning
 
-🦀 **Rust** • 🤖 **AI/LLM Integration** • 🚀 **GraalVM Native** • 📚 "Designing Data-Intensive Applications"
+- 🦀 **Rust** - System programming and performance optimization
+- 🤖 **AI/LLM Integration** - Building intelligent systems
+- 🚀 **GraalVM Native** - JVM performance optimization
+- 📖 **"Designing Data-Intensive Applications"** - Advanced system design
 
 ---
 
-## 📝 **Latest Blog Posts**
+## 📝 Latest Blog Posts
 
 🔥 **[Building Scalable Microservices with Event-Driven Architecture](https://tech-ish-thoughts.com/microservices-event-driven)**
 
@@ -146,11 +159,16 @@ const arthur = {
 
 🔍 **[Implementing Real-time Observability in Distributed Systems](https://tech-ish-thoughts.com/observability-patterns)**
 
-[![Blog](https://img.shields.io/badge/Read%20More-Tech.ish%20Thoughts-58A6FF?style=for-the-badge&logo=hashnode&logoColor=white)](https://tech-ish-thoughts.com)
+<div align="center">
+<a href="https://tech-ish-thoughts.com">
+<img src="https://substackcdn.com/image/fetch/w_30,h_30,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd9b62b38-c4a1-47dc-8fac-0ec88739efd6_828x828.jpeg" alt="Tech.ish Thoughts" width="20" height="20" style="border-radius: 50%" />
+<strong> Read more on tech.ish thoughts</strong>
+</a>
+</div>
 
 ---
 
-## 🤝 **Let's Connect**
+## 🤝 Let's Connect
 
 <div align="center">
 
@@ -158,13 +176,13 @@ const arthur = {
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:arthur.alvesdeveloper@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/thukabjj)
 
-**📍 Porto, Portugal** • **📱 +351 966 681 520**
+**📍 Porto, Portugal**
 
 ---
 
 *"Building scalable systems that handle millions of transactions while maintaining 99.99% uptime"*
 
-⭐ **Feel free to explore and star my repositories!**
+⭐ **Feel free to explore and star my repositories!** ⭐
 
 </div>  
 
