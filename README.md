@@ -2,7 +2,7 @@
 
 # Hi there, I'm Arthur Costa! 👋
 
-![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=3078c7&center=true&vCenter=true&width=500&lines=Software+Engineer+at+FanDuel;Backend+%7C+Cloud+%7C+Distributed+Systems;Building+scalable+solutions+for+8%2B+years)
+![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=3078c7&center=true&vCenter=true&width=600&lines=Software+Engineer+at+FanDuel;Backend+%7C+Cloud+%7C+Distributed+Systems;Building+scalable+solutions+for+8%2B+years)
 
 <img src="https://komarev.com/ghpvc/?username=thukabjj&color=blue&style=flat-square&label=Profile+Views" alt="Profile Views" />
 <img src="https://img.shields.io/github/followers/thukabjj?style=flat-square&color=blue&labelColor=333" alt="GitHub followers" />
