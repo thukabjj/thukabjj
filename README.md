@@ -169,28 +169,6 @@ Senior Software Engineer with **<!--YEARS-->9<!--/YEARS-->+ years** designing an
 
 ---
 
-## Key Achievements
-
-| Metric | Achievement | Impact |
-|-----------|---------------|----------|
-| Cost Optimization | 70% lower compute cost | 200+ instances moved to AWS Local Zones |
-| System Reliability | 60% → 90%+ success rate | Event-driven settlement at Jumia |
-| Scale & Performance | 1M+ daily transactions | 99.99% availability across LATAM |
-| DevOps Efficiency | 70% faster deployments | Faster, safer releases at FanDuel |
-
----
-
-## Education & Certifications
-
-**Associate's Degree** in Systems Analysis and Development
-Centro Universitário FMU | FIAM-FAAM *(2016 - 2018)*
-
-**Certifications**
-- AWS Certified Cloud Practitioner
-- EF SET English Certificate (C2 Proficient)
-
----
-
 ## Currently Learning
 
 - **Rust** - System programming and performance optimization
