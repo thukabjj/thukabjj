@@ -1,6 +1,6 @@
 <div align="center">
 
-# Hi there, I'm Arthur Costa! 👋
+# Hi there, I'm Arthur Costa
 
 ![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=3078c7&center=true&vCenter=true&width=640&lines=Senior+Software+Engineer+%40+Marks+%26+Spencer;Distributed+Systems+%7C+Event-Driven+%7C+Cloud-Native;Building+reliable+backends+for+9%2B+years)
 
@@ -11,11 +11,11 @@
 
 ---
 
-## 🚀 About Me
+## About Me
 
 ```typescript
 const arthur = {
-  location: "Porto, Portugal 🇵🇹",
+  location: "Porto, Portugal",
   role: "Senior Software Engineer @ Marks & Spencer (via Mindera)",
   experience: "9+ years",
   focus: ["Distributed Systems", "Event-Driven & Reactive Architecture", "Platform & Cloud Engineering"],
@@ -26,81 +26,81 @@ const arthur = {
 };
 ```
 
-🎯 Senior Software Engineer with **<!--YEARS-->9<!--/YEARS-->+ years** designing and operating **distributed backend systems**, **high-throughput platforms** and **cloud-native applications**. I work mostly with **Java** and **Go** on **event-driven and reactive architectures** running on **Kubernetes** across **Azure, AWS and GCP**. Day to day that means idempotency, asynchronous messaging, system integrations, architecture decisions and production troubleshooting for services handling **millions of transactions per day**.
+Senior Software Engineer with **<!--YEARS-->9<!--/YEARS-->+ years** designing and operating **distributed backend systems**, **high-throughput platforms** and **cloud-native applications**. I work mostly with **Java** and **Go** on **event-driven and reactive architectures** running on **Kubernetes** across **Azure, AWS and GCP**. Day to day that means idempotency, asynchronous messaging, system integrations, architecture decisions and production troubleshooting for services handling **millions of transactions per day**.
 
 ---
 
-## 🏢 Professional Journey
+## Professional Journey
 
 <details open>
-<summary><b>🛍️ Marks & Spencer (via Mindera) | Senior Software Engineer</b> <i>(Mar 2026 – Present)</i></summary>
+<summary><b>Marks & Spencer (via Mindera) | Senior Software Engineer</b> <i>(Mar 2026 – Present)</i></summary>
 
-**📍 Remote, Portugal**
-- ⚛️ **Order Fulfilment Platform**: Build reactive **Java** and **Micronaut** services on **Azure** with **Kafka**, **RabbitMQ** and **MongoDB Atlas**
-- 🤝 **The Sports Edit Integration**: Led the backend integration into M&S fulfilment systems, defining service contracts and integration boundaries across teams
-- 🔁 **Idempotent Order & Returns Strategy**: Designed safe reconciliation of The Sports Edit transactions with existing M&S workflows through an integration proxy
-- 🔍 **Observability**: Implemented metrics, dashboards and alerts in **Dynatrace** across distributed order workflows
-- 🚨 **Production Support**: Investigate incidents across async services, APIs, Kafka, RabbitMQ, MongoDB and downstream fulfilment systems
-- 📐 **Engineering Practices**: Drive architecture through **ADRs**, technical refinement, code reviews and **GitHub Actions** workflows
-
-</details>
-
-<details>
-<summary><b>📞 Five9 | Software Engineer</b> <i>(Nov 2025 – Apr 2026)</i></summary>
-
-**📍 Porto, Portugal**
-- ☎️ **Real-time Voice**: Built and operated call control and telephony services in the Five9 Intelligent CX Platform
-- ☁️ **Cloud-Native on GCP**: Microservices on **GKE**, **Anthos**, **Kubernetes** and **Istio** for high-availability, low-latency voice workloads
-- 🏗️ **Infrastructure & Observability**: **Terraform**-managed infrastructure; observability with **Grafana**, **Loki**, **Tempo** and **Mimir**
-- 🤝 **Reliability**: Worked with Product, QA, SRE and VoIP specialists on scalability, resilience and incident response
+**Remote, Portugal**
+- **Order Fulfilment Platform**: Build reactive **Java** and **Micronaut** services on **Azure** with **Kafka**, **RabbitMQ** and **MongoDB Atlas**
+- **The Sports Edit Integration**: Led the backend integration into M&S fulfilment systems, defining service contracts and integration boundaries across teams
+- **Idempotent Order & Returns Strategy**: Designed safe reconciliation of The Sports Edit transactions with existing M&S workflows through an integration proxy
+- **Observability**: Implemented metrics, dashboards and alerts in **Dynatrace** across distributed order workflows
+- **Production Support**: Investigate incidents across async services, APIs, Kafka, RabbitMQ, MongoDB and downstream fulfilment systems
+- **Engineering Practices**: Drive architecture through **ADRs**, technical refinement, code reviews and **GitHub Actions** workflows
 
 </details>
 
 <details>
-<summary><b>🎰 FanDuel | Software Engineer</b> <i>(Jun 2023 – Nov 2025)</i></summary>
+<summary><b>Five9 | Software Engineer</b> <i>(Nov 2025 – Apr 2026)</i></summary>
 
-**📍 Porto, Portugal**
-- 🏗️ **Infrastructure Modernization**: Led migration from AWS Outposts to Local Zones with EC2 Auto Scaling, cutting compute costs by **70%** across **200+ instances**
-- ⚡ **Real-time Serverless Platform**: Architected on API Gateway, Lambda, DynamoDB, SQS, Route 53 and CloudFront for high-volume workloads
-- 🛠️ **Developer Tooling**: Built internal **Go** and **Python** tools for automation and LLM-powered developer workflows
-- 📊 **Load Testing**: Designed a **Locust** framework validating multi-region reliability during peak sports-betting traffic
-- 🚀 **CI/CD**: Improved pipelines with GoCD, GitHub Actions, Jenkins, Buildkite, Ansible and Packer, cutting deployment times by **70%**
-- 🔍 **Observability**: Alerting with Datadog, Prometheus, Loki, Grafana and CloudWatch
+**Porto, Portugal**
+- **Real-time Voice**: Built and operated call control and telephony services in the Five9 Intelligent CX Platform
+- **Cloud-Native on GCP**: Microservices on **GKE**, **Anthos**, **Kubernetes** and **Istio** for high-availability, low-latency voice workloads
+- **Infrastructure & Observability**: **Terraform**-managed infrastructure; observability with **Grafana**, **Loki**, **Tempo** and **Mimir**
+- **Reliability**: Worked with Product, QA, SRE and VoIP specialists on scalability, resilience and incident response
 
 </details>
 
 <details>
-<summary><b>🛒 Multivision Consulting (Jumia Group) | Software Engineer</b> <i>(Oct 2022 – Jun 2023)</i></summary>
+<summary><b>FanDuel | Software Engineer</b> <i>(Jun 2023 – Nov 2025)</i></summary>
 
-**📍 Porto, Portugal**
-- 🔄 **Event-Driven Re-architecture**: Turned a monolithic settlement system into microservices with **Kafka**, **Debezium**, Java and Go
-- 📈 **Reliability**: Raised processing success rate from **60% to 90%+**
-- 🐳 **Delivery**: Containerized services on Kubernetes and Docker, ELK observability and Jenkins pipelines
-
-</details>
-
-<details>
-<summary><b>🤝 Mercado Livre | Software Engineer</b> <i>(Oct 2021 – Oct 2022)</i></summary>
-
-**📍 São Paulo, Brazil**
-- ⚡ **High-Performance Services**: Go, Java, Node.js and Groovy/Grails microservices processing **1M+ daily transactions** at **99.99% availability** across LATAM
-- 🎯 **Claim v2**: Led the initiative that cut claim resolution time by **30%** and improved NPS in multiple markets
-- 👥 **Mentorship**: Mentored junior engineers in microservices design and distributed-systems patterns
+**Porto, Portugal**
+- **Infrastructure Modernization**: Led migration from AWS Outposts to Local Zones with EC2 Auto Scaling, cutting compute costs by **70%** across **200+ instances**
+- **Real-time Serverless Platform**: Architected on API Gateway, Lambda, DynamoDB, SQS, Route 53 and CloudFront for high-volume workloads
+- **Developer Tooling**: Built internal **Go** and **Python** tools for automation and LLM-powered developer workflows
+- **Load Testing**: Designed a **Locust** framework validating multi-region reliability during peak sports-betting traffic
+- **CI/CD**: Improved pipelines with GoCD, GitHub Actions, Jenkins, Buildkite, Ansible and Packer, cutting deployment times by **70%**
+- **Observability**: Alerting with Datadog, Prometheus, Loki, Grafana and CloudWatch
 
 </details>
 
 <details>
-<summary><b>🏦 Itaú Unibanco | Software Engineer & Associate Software Engineer</b> <i>(Jul 2019 – Oct 2021)</i></summary>
+<summary><b>Multivision Consulting (Jumia Group) | Software Engineer</b> <i>(Oct 2022 – Jun 2023)</i></summary>
 
-**📍 São Paulo, Brazil**
-- ☁️ **Cloud Migration**: Directed migration of core banking systems to hybrid AWS (EKS, CodePipeline, CodeBuild, Istio) with **99.9% uptime** and Central Bank compliance
-- 📊 **Compliance Monitoring**: Splunk, Grafana and Prometheus dashboards for proactive alerting and auditability
-- 🔧 **Modernization**: Migrated Apache Camel services to Spring Boot; delivered a mainframe-integrated invoice MVP **two months ahead of schedule**
+**Porto, Portugal**
+- **Event-Driven Re-architecture**: Turned a monolithic settlement system into microservices with **Kafka**, **Debezium**, Java and Go
+- **Reliability**: Raised processing success rate from **60% to 90%+**
+- **Delivery**: Containerized services on Kubernetes and Docker, ELK observability and Jenkins pipelines
 
 </details>
 
 <details>
-<summary><b>🌱 Earlier roles</b> <i>(Feb 2017 – Jun 2019)</i></summary>
+<summary><b>Mercado Livre | Software Engineer</b> <i>(Oct 2021 – Oct 2022)</i></summary>
+
+**São Paulo, Brazil**
+- **High-Performance Services**: Go, Java, Node.js and Groovy/Grails microservices processing **1M+ daily transactions** at **99.99% availability** across LATAM
+- **Claim v2**: Led the initiative that cut claim resolution time by **30%** and improved NPS in multiple markets
+- **Mentorship**: Mentored junior engineers in microservices design and distributed-systems patterns
+
+</details>
+
+<details>
+<summary><b>Itaú Unibanco | Software Engineer & Associate Software Engineer</b> <i>(Jul 2019 – Oct 2021)</i></summary>
+
+**São Paulo, Brazil**
+- **Cloud Migration**: Directed migration of core banking systems to hybrid AWS (EKS, CodePipeline, CodeBuild, Istio) with **99.9% uptime** and Central Bank compliance
+- **Compliance Monitoring**: Splunk, Grafana and Prometheus dashboards for proactive alerting and auditability
+- **Modernization**: Migrated Apache Camel services to Spring Boot; delivered a mainframe-integrated invoice MVP **two months ahead of schedule**
+
+</details>
+
+<details>
+<summary><b>Earlier roles</b> <i>(Feb 2017 – Jun 2019)</i></summary>
 
 - **TrustHub** — Real-time banking CRM with Spring & Spring Cloud; onboarding and sales workflows **30% faster**
 - **CODDING Developing Ideas** — CRM and warehouse systems for pharma clients (PHP, Laravel, MySQL); data sync lag from hours to minutes
@@ -109,7 +109,7 @@ const arthur = {
 
 ---
 
-## 🛠️ Technologies & Tools
+## Technologies & Tools
 
 <div align="center">
 
@@ -169,7 +169,7 @@ const arthur = {
 
 ---
 
-## 📊 GitHub Statistics
+## GitHub Statistics
 
 <div align="center">
 
@@ -185,38 +185,38 @@ const arthur = {
 
 ---
 
-## 🏆 Key Achievements
+## Key Achievements
 
-| 🎯 Metric | 📊 Achievement | 💡 Impact |
+| Metric | Achievement | Impact |
 |-----------|---------------|----------|
-| 💰 Cost Optimization | 70% lower compute cost | 200+ instances moved to AWS Local Zones |
-| 📈 System Reliability | 60% → 90%+ success rate | Event-driven settlement at Jumia |
-| ⚡ Scale & Performance | 1M+ daily transactions | 99.99% availability across LATAM |
-| 🚀 DevOps Efficiency | 70% faster deployments | Faster, safer releases at FanDuel |
+| Cost Optimization | 70% lower compute cost | 200+ instances moved to AWS Local Zones |
+| System Reliability | 60% → 90%+ success rate | Event-driven settlement at Jumia |
+| Scale & Performance | 1M+ daily transactions | 99.99% availability across LATAM |
+| DevOps Efficiency | 70% faster deployments | Faster, safer releases at FanDuel |
 
 ---
 
-## 🎓 Education & Certifications
+## Education & Certifications
 
-🎓 **Associate's Degree** in Systems Analysis and Development
-📍 Centro Universitário FMU | FIAM-FAAM *(2016 - 2018)*
+**Associate's Degree** in Systems Analysis and Development
+Centro Universitário FMU | FIAM-FAAM *(2016 - 2018)*
 
-🏅 **Certifications**
+**Certifications**
 - AWS Certified Cloud Practitioner
 - EF SET English Certificate (C2 Proficient)
 
 ---
 
-## 📚 Currently Learning
+## Currently Learning
 
-- 🦀 **Rust** - System programming and performance optimization
-- 🤖 **AI/LLM Integration** - Building intelligent systems
-- 🚀 **GraalVM Native** - JVM performance optimization
-- 📖 **"Designing Data-Intensive Applications"** - Advanced system design
+- **Rust** - System programming and performance optimization
+- **AI/LLM Integration** - Building intelligent systems
+- **GraalVM Native** - JVM performance optimization
+- **"Designing Data-Intensive Applications"** - Advanced system design
 
 ---
 
-## 📝 Blog
+## Blog
 
 <div align="center">
 <a href="https://techishthoughts.com">
@@ -227,7 +227,7 @@ const arthur = {
 
 ---
 
-## 🤝 Let's Connect
+## Let's Connect
 
 <div align="center">
 
@@ -235,12 +235,12 @@ const arthur = {
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:arthur.alvesdeveloper@gmail.com)
 [![Blog](https://img.shields.io/badge/tech.ish_thoughts-FF6719?style=for-the-badge&logo=substack&logoColor=white)](https://techishthoughts.com)
 
-**📍 Porto, Portugal**
+**Porto, Portugal**
 
 ---
 
 *"Building reliable distributed systems that handle millions of transactions"*
 
-⭐ **Feel free to explore and star my repositories!** ⭐
+**Feel free to explore and star my repositories!**
 
 </div>
