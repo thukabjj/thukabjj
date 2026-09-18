@@ -169,22 +169,6 @@ Senior Software Engineer with **<!--YEARS-->9<!--/YEARS-->+ years** designing an
 
 ---
 
-## GitHub Statistics
-
-<div align="center">
-
-<!-- Generated daily by .github/workflows/update-profile.yml -->
-<img src="metrics/overview.svg" alt="GitHub overview" />
-
-<img src="metrics/languages.svg" alt="Most used languages" />
-<img src="metrics/activity.svg" alt="Recent GitHub activity" />
-
-<img src="https://streak-stats.demolab.com/?user=thukabjj&theme=buefy&border_radius=10" alt="GitHub Streak"/>
-
-</div>
-
----
-
 ## Key Achievements
 
 | Metric | Achievement | Impact |

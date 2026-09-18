@@ -12,6 +12,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: update-profile
@@ -20,7 +21,6 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    if: github.actor != 'github-actions[bot]'
     steps:
       - uses: actions/checkout@v4
 
@@ -31,60 +31,21 @@ jobs:
       - name: Refresh years of experience
         run: python scripts/update_readme.py
 
-      - name: Metrics - overview
-        uses: lowlighter/metrics@v3.34
-        with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          user: thukabjj
-          filename: overview.svg
-          output_action: none
-          template: classic
-          base: header, activity, community, repositories
-          config_timezone: Europe/Lisbon
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
-
-      - name: Metrics - languages
-        uses: lowlighter/metrics@v3.34
-        with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          user: thukabjj
-          filename: languages.svg
-          output_action: none
-          base: ""
-          plugin_languages: yes
-          plugin_languages_ignored: html, css, shell, dockerfile, makefile
-          plugin_languages_limit: 8
-          plugin_languages_sections: most-used
-          plugin_languages_details: percentage
-
-      - name: Metrics - recent activity
-        uses: lowlighter/metrics@v3.34
-        with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          user: thukabjj
-          filename: activity.svg
-          output_action: none
-          base: ""
-          config_timezone: Europe/Lisbon
-          plugin_activity: yes
-          plugin_activity_limit: 6
-          plugin_activity_days: 30
-          plugin_activity_filter: all
-
-      - name: Collect metrics
-        run: |
-          mkdir -p metrics
-          cp /metrics_renders/overview.svg /metrics_renders/languages.svg /metrics_renders/activity.svg metrics/
-
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add README.md metrics/
+          git add README.md
           if git diff --cached --quiet; then
             echo "No changes"
             exit 0
           fi
-          git commit -m "chore: refresh profile metrics"
+          git commit -m "chore: refresh years of experience"
           git push
+
+      # README rarely changes, so there is no commit activity to stop GitHub from
+      # disabling this scheduled workflow after 60 days; re-enable it via the API.
+      - name: Keep schedule alive
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X PUT "repos/${{ github.repository }}/actions/workflows/update-profile.yml/enable"
