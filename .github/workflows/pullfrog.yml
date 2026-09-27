@@ -1,0 +1,39 @@
+# Pullfrog agent (https://docs.pullfrog.com). The Pullfrog GitHub App
+# dispatches this workflow for @pullfrog mentions, PR reviews and issues.
+# The model (DeepSeek through OpenRouter) and OPENROUTER_API_KEY come from
+# the account-level Pullfrog settings and secrets, so no env block is needed.
+name: Pullfrog
+run-name: ${{ inputs.name || github.workflow }}
+on:
+  workflow_dispatch:
+    inputs:
+      prompt:
+        type: string
+        description: Agent prompt
+      name:
+        type: string
+        description: Run name
+
+permissions:
+  contents: read
+
+jobs:
+  pullfrog:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 1
+      - name: Run agent
+        uses: pullfrog/pullfrog@99c5e781dd54463197d1109998386d37c84f6853 # v0.1.84
+        with:
+          prompt: ${{ inputs.prompt }}
+          # Feature branches only: never main, tags or branch deletion.
+          push: restricted
+          # Scrubs keys and tokens from the agent's shell environment.
+          shell: restricted
