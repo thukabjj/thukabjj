@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research dossier</title>
+<script src="../board.js"></script>
+<link rel="stylesheet" href="../tokens.css">
+<style>
+  body { padding: var(--space-8) var(--space-10); }
+  main { display: flex; flex-direction: column; gap: var(--space-10); max-width: 1440px; }
+  section { display: flex; flex-direction: column; gap: var(--space-4); }
+  .cols { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: var(--space-4); }
+  .card { padding: var(--space-4); display: flex; flex-direction: column; gap: var(--space-3); }
+  .shot { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; border: 1px solid var(--line); background: var(--raised); }
+  .specimen { font-size: 40px; line-height: 44px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+  .swatches { display: flex; flex-wrap: wrap; gap: 4px; }
+  .sw { width: 36px; height: 36px; border: 1px solid var(--line); position: relative; }
+  .sw span { position: absolute; left: 0; right: 0; bottom: -16px; font: 9px/12px var(--font-mono); color: var(--muted); text-align: center; }
+  .bars { display: flex; flex-direction: column; gap: 3px; }
+  .bar { display: grid; grid-template-columns: 150px 1fr 44px; gap: var(--space-2); align-items: center; font: 11px/14px var(--font-mono); }
+  .bar i { display: block; height: 6px; background: var(--signal); }
+  table { border-collapse: collapse; width: 100%; }
+  th, td { text-align: left; vertical-align: top; padding: var(--space-2) var(--space-3); border-bottom: 1px solid var(--line); font-size: var(--fs-small); line-height: var(--lh-small); }
+  .score { font: var(--fw-strong) 15px/1 var(--font-mono); }
+  .empty { padding: var(--space-6); border: 1px dashed var(--line); color: var(--muted); }
+</style>
+</head>
+<body>
+<main id="main">
+  <header><span class="label">Research dossier</span><h1 class="h1" id="q">Research</h1></header>
+  <section id="comparables" aria-labelledby="h-comp"><h2 class="h2" id="h-comp">Comparables</h2><div class="cols" data-slot></div></section>
+  <section id="typography" aria-labelledby="h-type"><h2 class="h2" id="h-type">Typography</h2><div class="cols" data-slot></div></section>
+  <section id="color" aria-labelledby="h-color"><h2 class="h2" id="h-color">Color and contrast</h2><div class="cols" data-slot></div></section>
+  <section id="motion" aria-labelledby="h-motion"><h2 class="h2" id="h-motion">Motion</h2><div class="cols" data-slot></div></section>
+  <section id="matrices" aria-labelledby="h-mx"><h2 class="h2" id="h-mx">Comparison matrices</h2><div data-slot></div></section>
+  <section id="principles" aria-labelledby="h-pr"><h2 class="h2" id="h-pr">Principles and decisions</h2><div data-slot></div></section>
+  <section id="tokens" aria-labelledby="h-tk"><h2 class="h2" id="h-tk">Token derivation</h2><div data-slot></div></section>
+</main>
+<script src="data.js"></script>
+<script src="research.js"></script>
+</body>
+</html>

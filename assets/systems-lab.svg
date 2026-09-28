@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="280" viewBox="0 0 1000 280" role="img" aria-labelledby="title desc">
+  <title id="title">Arthur Costa — Systems Lab</title>
+  <desc id="desc">Just a builder. A cyan orbital network on a deep blue background.</desc>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1b2b40" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="halo">
+      <stop stop-color="#17414b" stop-opacity=".65"/>
+      <stop offset="1" stop-color="#0b1220" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1000" height="280" rx="12" fill="#0b1220"/>
+  <rect x="600" width="400" height="280" rx="12" fill="url(#grid)"/>
+  <ellipse cx="814" cy="140" rx="186" ry="140" fill="url(#halo)"/>
+  <path d="M24 56V24H64 M936 24H976V56 M976 224V256H936 M64 256H24V224" fill="none" stroke="#75e8e1" stroke-width="2"/>
+  <path d="M48 218H570" stroke="#263d50"/>
+  <g font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace">
+    <text x="48" y="64" fill="#75e8e1" font-size="16" letter-spacing="3">THUKABJJ / SYSTEMS LAB</text>
+    <text x="44" y="141" fill="#eff6ff" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="66" font-weight="650" letter-spacing="-2">Arthur Costa</text>
+    <text x="48" y="190" fill="#b9c8dc" font-size="28">Just a builder.</text>
+    <text x="48" y="245" fill="#a9b8cf" font-size="14" letter-spacing="2">CODE · EXPERIMENTS · COMMUNITY</text>
+  </g>
+  <g transform="translate(813 140)" fill="none">
+    <circle r="100" stroke="#345567" stroke-width="1"/>
+    <circle r="72" stroke="#547e89" stroke-width="1" stroke-dasharray="3 9"/>
+    <ellipse rx="114" ry="42" transform="rotate(-34)" stroke="#75e8e1" stroke-width="1.5"/>
+    <ellipse rx="114" ry="42" transform="rotate(34)" stroke="#75e8e1" stroke-opacity=".5" stroke-width="1.5"/>
+    <path d="M-132 0H132 M0-116V116" stroke="#345567" stroke-width="1"/>
+    <path d="M-57-58L48-38 70 50-35 68Z M-57-58L70 50 M48-38L-35 68" stroke="#609ca9" stroke-width="1"/>
+    <g fill="#0b1220" stroke="#75e8e1" stroke-width="2">
+      <circle cx="-57" cy="-58" r="5"/><circle cx="48" cy="-38" r="5"/>
+      <circle cx="70" cy="50" r="5"/><circle cx="-35" cy="68" r="5"/>
+      <circle r="11"/>
+    </g>
+    <circle r="3" fill="#75e8e1"/>
+  </g>
+</svg>

@@ -1,0 +1,8 @@
+__pycache__/
+# Regenerable local design captures, previews, and review evidence.
+design/research/captures/
+design/research/data.js
+design/boards/profile-*.html
+design/evidence/
+design/*.mp4
+.agent-engineering/

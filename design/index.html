@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design canvas</title>
+<script src="board.js"></script>
+<link rel="stylesheet" href="tokens.css">
+<style>
+  body { padding: var(--space-8) var(--space-10); display: flex; flex-direction: column; gap: var(--space-8); }
+  .row { display: flex; flex-wrap: wrap; gap: var(--space-6); }
+  figure { margin: 0; display: flex; flex-direction: column; gap: var(--space-2); }
+  .thumb { position: relative; overflow: hidden; border: 1px solid var(--line); display: block; }
+  .thumb iframe { position: absolute; left: 0; top: 0; border: 0; transform-origin: 0 0; pointer-events: none; }
+</style>
+</head>
+<body>
+<header style="display:flex; justify-content:space-between; align-items:flex-end; gap:var(--space-6);">
+  <div><span class="label">Canvas</span><h1 class="h1" id="t">Design canvas</h1></div>
+  <nav style="display:flex; gap:var(--space-2);" aria-label="Views">
+    <a class="btn btn-primary" href="walkthrough.html">Play walkthrough</a>
+    <a class="btn" href="research/index.html">Research</a>
+  </nav>
+</header>
+<main id="main" style="display:flex; flex-direction:column; gap:var(--space-6);"></main>
+<script src="scenes.js"></script>
+<script>
+(function () {
+  var data = window.DESIGN_SCENES || { scenes: [] };
+  if (data.title) { document.getElementById("t").textContent = data.title; document.title = data.title; }
+  var THUMB = 360, main = document.getElementById("main");
+  ["dark", "light"].forEach(function (theme) {
+    var th = document.createElement("h2"); th.className = "h1"; th.textContent = theme === "dark" ? "Dark" : "Light";
+    main.appendChild(th);
+    var byChapter = {};
+    data.scenes.forEach(function (s, i) { (byChapter[s.chapter] = byChapter[s.chapter] || []).push([s, i]); });
+    Object.keys(byChapter).forEach(function (ch) {
+      var sec = document.createElement("section");
+      sec.innerHTML = '<h3 class="label" style="margin:0 0 var(--space-3)"></h3><div class="row"></div>';
+      sec.querySelector("h3").textContent = ch;
+      byChapter[ch].forEach(function (pair) {
+        var s = pair[0], w = s.w || 1440, h = s.h || 900, k = THUMB / w;
+        var fig = document.createElement("figure");
+        var a = document.createElement("a");
+        a.className = "thumb"; a.href = s.board + "?theme=" + theme;
+        a.style.width = THUMB + "px"; a.style.height = Math.round(h * k) + "px";
+        a.setAttribute("aria-label", "Open " + s.title + " (" + theme + ")");
+        var f = document.createElement("iframe");
+        f.src = s.board + "?theme=" + theme; f.title = s.title; f.tabIndex = -1;
+        f.style.width = w + "px"; f.style.height = h + "px"; f.style.transform = "scale(" + k + ")";
+        a.appendChild(f);
+        var cap = document.createElement("figcaption"); cap.className = "small muted";
+        cap.textContent = String(pair[1] + 1).padStart(2, "0") + " · " + s.title;
+        fig.appendChild(a); fig.appendChild(cap);
+        sec.querySelector(".row").appendChild(fig);
+      });
+      main.appendChild(sec);
+    });
+  });
+})();
+</script>
+</body>
+</html>

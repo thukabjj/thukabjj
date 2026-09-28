@@ -1,0 +1,179 @@
+{
+  "question": "How can Arthur's GitHub profile express an approved restrained sci-fi identity while directing readers to public code, recent stack, collaborative writing and mentoring?",
+  "comparables": [
+    {
+      "name": "DenverCoder1",
+      "bucket": "direct",
+      "why": "Owned/contributed project hierarchy",
+      "url": "https://github.com/DenverCoder1"
+    },
+    {
+      "name": "Pradumna Saraf",
+      "bucket": "direct",
+      "why": "Community and writing in concise prose",
+      "url": "https://github.com/Pradumnasaraf"
+    },
+    {
+      "name": "Simon Willison",
+      "bucket": "direct",
+      "why": "Immediate project and writing destinations",
+      "url": "https://github.com/simonw"
+    },
+    {
+      "name": "Neofetch Profile",
+      "bucket": "adjacent",
+      "why": "Terminal composition and dark/light asset examples",
+      "url": "https://github.com/jeantimex/neofetch-profile"
+    },
+    {
+      "name": "eDEX-UI",
+      "bucket": "adjacent",
+      "why": "Sci-fi framing only; archived software, no copied code or assets",
+      "url": "https://github.com/GitSquared/edex-ui"
+    },
+    {
+      "name": "GitHub native profile",
+      "bucket": "platform",
+      "why": "Host typography, responsive Markdown and navigation",
+      "url": "https://github.com/thukabjj"
+    }
+  ],
+  "principles": [
+    {
+      "id": "P1",
+      "statement": "A visitor reaches public work immediately after the introduction.",
+      "evidence": "Simon Willison and DenverCoder1; user requests public projects."
+    },
+    {
+      "id": "P2",
+      "statement": "Essential identity, focus and links are plain text outside artwork.",
+      "evidence": "Neofetch screenshot scales dense text poorly at narrow widths."
+    },
+    {
+      "id": "P3",
+      "statement": "Community is a first-class section with only user-confirmed facts.",
+      "evidence": "Pradumna Saraf narrative; Arthur confirmed Tech.ish Thoughts and NGO mentoring."
+    },
+    {
+      "id": "P4",
+      "statement": "Production has no decorative motion or false live telemetry.",
+      "evidence": "GitHub profile is static content; eDEX is a visual reference, not an interactive runtime."
+    },
+    {
+      "id": "P5",
+      "statement": "Retain only the requested view counter and explain its meaning.",
+      "evidence": "Explicit user request; no claims of unique visitors or historic accuracy."
+    }
+  ],
+  "matrices": [
+    {
+      "decision": "Sci-fi expression",
+      "criteria": [
+        "Readability",
+        "Platform fit",
+        "Distinct identity"
+      ],
+      "options": [
+        {
+          "name": "Full terminal dashboard",
+          "cells": [
+            {
+              "score": 2,
+              "evidence": "Neofetch small labels shrink inside Markdown."
+            },
+            {
+              "score": 2,
+              "evidence": "Interactive shell is not a profile README feature."
+            },
+            {
+              "score": 5,
+              "evidence": "Strong terminal identity."
+            }
+          ],
+          "verdict": "Reject dense image-only content."
+        },
+        {
+          "name": "Original banner + native Markdown",
+          "cells": [
+            {
+              "score": 5,
+              "evidence": "Body remains selectable and reflows."
+            },
+            {
+              "score": 5,
+              "evidence": "Uses GitHub-supported image and Markdown."
+            },
+            {
+              "score": 4,
+              "evidence": "Original orbital cyan artwork gives identity."
+            }
+          ],
+          "verdict": "Take; user approved this combined direction."
+        }
+      ],
+      "recommendation": "Original static banner plus concise native sections."
+    }
+  ],
+  "tokens": [
+    {
+      "token": "--font-body / --fs-body / --lh-body",
+      "value": "system-ui / 16px / 24px",
+      "evidence": "Browser measured GitHub article at 16px/24px in prior live review. Whole-page captures report 14px including navigation; do not conflate the two."
+    },
+    {
+      "token": "--font-mono",
+      "value": "ui-monospace, SFMono-Regular, Menlo, monospace",
+      "evidence": "Captures include ui-monospace. Terminal label treatment adapts Neofetch; no downloaded fonts."
+    },
+    {
+      "token": "--signal",
+      "value": "#75e8e1 dark / #0969da light",
+      "evidence": "Cyan is an original design choice adapting eDEX screenshot. Light blue follows GitHub link treatment. Not presented as sampled eDEX values."
+    },
+    {
+      "token": "--bg / --surface / --ink",
+      "value": "GitHub-like dark and light neutrals",
+      "evidence": "Native profile captures and theme behavior; preview approximation, not replacement for GitHub CSS."
+    },
+    {
+      "token": "--space-* / --radius-*",
+      "value": "4px spacing base; 6px panel corners",
+      "evidence": "Conservative kit values retained for review chrome; production surrounding layout is GitHub-owned."
+    },
+    {
+      "token": "--dur-scene / --ease-standard",
+      "value": "480ms / cubic-bezier(.2,.7,.2,1)",
+      "evidence": "Kit review-player defaults, not a measured reference animation. Purpose is scene navigation. No production animation."
+    },
+    {
+      "token": "--dur-rise / --dur-stagger / --dur-sheet / --dur-value / --dur-live",
+      "value": "Kit defaults, unused by production",
+      "evidence": "Used only by generic review kit if applicable; README/banner contain no motion."
+    }
+  ],
+  "decisions": [
+    {
+      "chose": "Use reviewed public project documentation",
+      "rejected": "Invented project maturity or contribution claims",
+      "why": "Source-bounded profile content.",
+      "needsApproval": false
+    },
+    {
+      "chose": "Static original artwork",
+      "rejected": "Hotlinked art and heavy animation",
+      "why": "Reliable asset and readable motion-free profile.",
+      "needsApproval": false
+    },
+    {
+      "chose": "Keep blog rebuilding status and unbranded NGO mentoring",
+      "rejected": "Invent NGO identity or show nonexistent articles",
+      "why": "Matches user-supplied facts.",
+      "needsApproval": false
+    }
+  ],
+  "limitations": [
+    "Captured contrast and motion statistics include GitHub chrome and cannot measure text baked into images.",
+    "Preview boards approximate GitHub body styles; published profile is unchanged until a push.",
+    "All source screenshots are research evidence, never production assets."
+  ]
+}

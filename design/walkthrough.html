@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Walkthrough</title>
+<script src="board.js"></script>
+<link rel="stylesheet" href="tokens.css">
+<style>
+  html, body { height: 100%; overflow: hidden; }
+  body { display: flex; flex-direction: column; }
+  header, footer { flex-shrink: 0; display: flex; align-items: center; gap: var(--space-4); padding: var(--space-3) var(--space-6); box-sizing: border-box; }
+  header { border-bottom: 1px solid var(--line); justify-content: space-between; }
+  footer { border-top: 1px solid var(--line); flex-direction: column; align-items: stretch; gap: var(--space-3); }
+  .controls, .themes { display: flex; gap: var(--space-2); align-items: center; }
+  .tbtn[aria-pressed="true"] { background: var(--signal); border-color: var(--signal); color: var(--on-signal); }
+  .stage { flex: 1; min-height: 0; position: relative; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+  .viewport { position: relative; overflow: hidden; transform-origin: center; box-shadow: var(--shadow); border: 1px solid var(--line); background: var(--bg); }
+  .viewport { flex-shrink: 0; }
+  .enter { position: absolute; inset: 0; overflow: hidden; }
+  .enter iframe { position: absolute; left: 0; top: 0; border: 0; background: var(--bg); }
+  .caption { display: flex; justify-content: space-between; align-items: baseline; gap: var(--space-6); }
+  .caption .h2 { white-space: nowrap; }
+  .segs { display: flex; gap: 3px; height: var(--touch-min); }
+  .seg { flex: 1; min-width: var(--touch-min); min-height: var(--touch-min); border: 0; padding: 0; cursor: pointer; background: transparent; position: relative; overflow: hidden; border-radius: 2px; }
+  .seg::before { content: ""; position: absolute; inset: 17px 0; background: var(--line); }
+  .seg[data-alt="1"]::before { background: var(--line-strong); }
+  .seg > i { position: absolute; inset: 17px auto 17px 0; width: 0; background: var(--signal); }
+  .seg[aria-current="step"] { outline: 1px solid var(--signal); }
+  body.record header .controls, body.record header .themes { visibility: hidden; }
+</style>
+</head>
+<body>
+<header>
+  <div style="display:flex; flex-direction:column; gap:2px; min-width:0;">
+    <span class="label" id="chapter">&nbsp;</span>
+    <span class="h3" id="title">Walkthrough</span>
+  </div>
+  <div class="controls">
+    <button class="btn" type="button" id="prev" aria-label="Previous scene">Prev</button>
+    <button class="btn btn-primary" type="button" id="play">Pause</button>
+    <button class="btn" type="button" id="next" aria-label="Next scene">Next</button>
+    <span class="mono num muted" id="counter" aria-live="polite"></span>
+  </div>
+  <div class="themes" role="group" aria-label="Theme">
+    <button class="btn tbtn" type="button" data-theme-set="dark">Dark</button>
+    <button class="btn tbtn" type="button" data-theme-set="light">Light</button>
+  </div>
+</header>
+<div class="stage" id="stage"><div class="viewport" id="viewport"><div class="enter scene" id="enter"><iframe id="frame" title="Scene"></iframe></div></div></div>
+<footer>
+  <div class="caption"><span class="h2" id="scene-title"></span><span class="p muted" id="caption"></span></div>
+  <nav class="segs" id="segs" aria-label="Scenes"></nav>
+</footer>
+<script src="scenes.js"></script>
+<script src="walkthrough.js"></script>
+</body>
+</html>

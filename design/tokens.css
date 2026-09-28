@@ -1,0 +1,96 @@
+/*
+ * Design tokens: the single definition shared by every board, the walkthrough,
+ * the research boards, and later the production theme.
+ *
+ * Profile review values are documented in research/analysis.json. Production
+ * Markdown inherits GitHub typography; banner colors live in systems-lab.svg.
+ * Keep the token NAMES; boards depend on them.
+ */
+
+:root {
+  /* Type: set from research (families, scale ratio, body size, line height). */
+  --font-display: ui-sans-serif, system-ui, sans-serif;
+  --font-body: ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --fs-caption: 12px;  --lh-caption: 17px;
+  --fs-small: 13px;    --lh-small: 19px;
+  --fs-body: 16px;     --lh-body: 24px;
+  --fs-h3: 15px;       --lh-h3: 21px;
+  --fs-h2: 20px;       --lh-h2: 26px;
+  --fs-h1: 28px;       --lh-h1: 34px;
+  --fs-display: 44px;  --lh-display: 50px;
+  --fw-regular: 400; --fw-medium: 500; --fw-strong: 600;
+  --tracking-tight: -0.02em; --tracking-label: 0.1em;
+
+  /* Space, shape, elevation: set from research (grid unit, density, radii). */
+  --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px;
+  --space-5: 20px; --space-6: 24px; --space-8: 32px; --space-10: 40px;
+  --radius-sm: 4px; --radius-md: 6px; --radius-lg: 12px;
+  --touch-min: 44px;
+
+  /* Motion: one curve, a few named motions, each with a purpose. */
+  --ease-standard: cubic-bezier(.2, .7, .2, 1);
+  --dur-rise: 460ms;      /* content blocks entering */
+  --dur-stagger: 90ms;    /* sibling reading order */
+  --dur-sheet: 420ms;     /* sheets and overlays from their origin */
+  --dur-scene: 480ms;     /* walkthrough scene change */
+  --dur-value: 500ms;     /* meters, progress, resize */
+  --dur-live: 1200ms;     /* live status only: recording, streaming */
+}
+
+/* Color roles per theme: set from research (neutral temperature, accents, contrast). */
+:root, [data-theme="dark"] {
+  --bg: #0d1117; --surface: #0d1117; --raised: #161b22;
+  --ink: #f0f6fc; --muted: #a9b8cf; --line: #3d444d; --line-strong: #9198a1;
+  --signal: #75e8e1; --warn: #ffc466; --danger: #ff8168; --success: #7ee0a1;
+  --on-signal: #0c0d0e; --scrim: rgba(0, 0, 0, .6);
+  --shadow: 0 12px 32px rgba(0, 0, 0, .5);
+  color-scheme: dark;
+}
+[data-theme="light"] {
+  --bg: #ffffff; --surface: #ffffff; --raised: #f6f8fa;
+  --ink: #1f2328; --muted: #59636e; --line: #d1d9e0; --line-strong: #818b98;
+  --signal: #0969da; --warn: #7d5200; --danger: #a33020; --success: #1d6b3a;
+  --on-signal: #ffffff; --scrim: rgba(31, 34, 32, .45);
+  --shadow: 0 12px 32px rgba(31, 34, 32, .18);
+  color-scheme: light;
+}
+
+/* Base */
+html, body { margin: 0; background: var(--bg); color: var(--ink); }
+body { font: var(--fw-regular) var(--fs-body)/var(--lh-body) var(--font-body); -webkit-font-smoothing: antialiased; }
+.num { font-variant-numeric: tabular-nums; }
+.mono { font-family: var(--font-mono); font-size: var(--fs-small); }
+.label { font: var(--fw-medium) 11px/14px var(--font-mono); letter-spacing: var(--tracking-label); text-transform: uppercase; color: var(--muted); }
+.muted { color: var(--muted); }
+.h1 { margin: 0; font: var(--fw-strong) var(--fs-h1)/var(--lh-h1) var(--font-display); letter-spacing: var(--tracking-tight); }
+.h2 { margin: 0; font: var(--fw-strong) var(--fs-h2)/var(--lh-h2) var(--font-display); }
+.h3 { margin: 0; font: var(--fw-strong) var(--fs-h3)/var(--lh-h3) var(--font-body); }
+.p { margin: 0; }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-md); box-sizing: border-box; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: var(--space-2); min-height: var(--touch-min); padding: 0 var(--space-4); border-radius: var(--radius-md); border: 1px solid var(--line); background: transparent; color: var(--ink); font: var(--fw-strong) 14px/1.2 var(--font-body); cursor: pointer; text-decoration: none; }
+.btn:hover { border-color: var(--muted); }
+.btn-primary { background: var(--signal); border-color: var(--signal); color: var(--on-signal); }
+:focus-visible { outline: 2px solid var(--signal); outline-offset: 3px; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+/* Motion vocabulary */
+.rise { animation: kit-rise var(--dur-rise) var(--ease-standard) both; }
+.d1 { animation-delay: calc(var(--dur-stagger) * 1); }
+.d2 { animation-delay: calc(var(--dur-stagger) * 2); }
+.d3 { animation-delay: calc(var(--dur-stagger) * 3); }
+.d4 { animation-delay: calc(var(--dur-stagger) * 4); }
+.d5 { animation-delay: calc(var(--dur-stagger) * 5); }
+.sheet { animation: kit-sheet var(--dur-sheet) var(--ease-standard) both; }
+.scene { animation: kit-scene var(--dur-scene) var(--ease-standard) both; }
+.value { transition: width var(--dur-value) var(--ease-standard), height var(--dur-value) var(--ease-standard); }
+.live { animation: kit-live var(--dur-live) steps(2, jump-none) infinite; }
+@keyframes kit-rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@keyframes kit-sheet { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: none; } }
+@keyframes kit-scene { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+@keyframes kit-live { 0% { opacity: 1; } 50% { opacity: .3; } 100% { opacity: 1; } }
+
+/* Reduced motion: required. design-kit check fails without this block. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
