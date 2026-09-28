@@ -2,7 +2,7 @@
 """Generate review boards from the actual README using GitHub's Markdown renderer.
 
 Requires the existing gh CLI. This performs a rendering request, not a repository
-write. Generated boards embed the original banner and share the design tokens.
+write. Generated boards share the design tokens.
 """
 import base64
 import json
@@ -17,9 +17,6 @@ rendered = subprocess.run(
     ["gh", "api", "markdown", "--input", "-"], input=request,
     text=True, capture_output=True, check=True,
 ).stdout
-banner = base64.b64encode((ROOT / "assets/systems-lab.svg").read_bytes()).decode()
-rendered = rendered.replace('src="assets/systems-lab.svg"', f'src="data:image/svg+xml;base64,{banner}"')
-rendered = rendered.replace('href="assets/systems-lab.svg"', 'href="../../assets/systems-lab.svg"')
 # Embed a real counter snapshot only in the offline review boards. Production
 # keeps the live external image; no numeric value is fabricated for the preview.
 with urllib.request.urlopen(
@@ -58,4 +55,4 @@ for label, layout in [("Desktop", "desktop"), ("Mobile", "mobile")]:
     (ROOT / "design/boards" / f"profile-{layout}.html").write_text(
         template.format(label=label, layout=layout, content=rendered)
     )
-print("Generated desktop/mobile boards from README.md and the original SVG.")
+print("Generated desktop/mobile boards from README.md.")

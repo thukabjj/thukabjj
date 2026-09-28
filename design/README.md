@@ -2,7 +2,7 @@
 
 ## This profile
 
-Production content lives in `../README.md` and `../assets/systems-lab.svg`.
+Production content lives in `../README.md`. The banner was removed at the owner's request.
 Run `python scripts/render_design.py` from the repository root to regenerate the
 desktop and mobile review boards. It uses the existing `gh` CLI and GitHub's
 Markdown rendering endpoint; it does not modify a GitHub repository.

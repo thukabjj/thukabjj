@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="assets/systems-lab.svg" width="100%" alt="Arthur Costa — Systems Lab. Just a builder." />
-</p>
-
 # Arthur Costa
 
 **Just a builder.** Exploring distributed systems, platform engineering, low-level programming, and machine learning experiments.
