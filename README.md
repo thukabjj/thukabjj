@@ -44,7 +44,7 @@ Alongside **Tech.ish Thoughts**, I mentor Brazilians who want to enter software 
 
 ---
 
-**Porto, Portugal** · [LinkedIn](https://www.linkedin.com/in/arthur-alves-da-costa) · [Email](mailto:arthur.alvesdeveloper@gmail.com)
+**Porto, Portugal** · [LinkedIn](https://www.linkedin.com/in/arthur-alves-da-costa)
 
 <img src="https://komarev.com/ghpvc/?username=thukabjj&amp;color=197b83&amp;style=flat-square&amp;label=Profile+views" alt="Profile views counter" />
 
